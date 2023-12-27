@@ -1,0 +1,22 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgb(238, 235, 235);
+}
+#left-side{
+    height: 100vh;
+    width:20vw;
+    background-color: #2563eb;
+    padding: 1.5%;
+    color: white;
+    font-size: 30px;
+    display: grid;
+    gap: 10px;
+    list-style: none;
+}
+#left-side .leftside-title img{
+    height: 45px;
+    width: 45px;
+}
