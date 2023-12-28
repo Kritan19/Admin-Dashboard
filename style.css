@@ -5,7 +5,7 @@
 body{
     display: flex;
     flex-direction: row;
-    background-color: rgb(238, 235, 235);
+    background-color: rgb(204, 200, 200);
 }
 #left-side{
     height: 100vh;
@@ -25,7 +25,7 @@ body{
 }
 .leftside-title{
     display: flex;
-    gap: 5px;
+    gap: 15px;
     font-size: 40px;
     font-weight: bolder;
     height: 55px;
@@ -44,13 +44,13 @@ body{
 #left-side ul{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 22px;
 }
 #left-side li{
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    gap: 15px;
+    gap: 20px;
 }
 #left-side li:hover{
     text-decoration: underline;
@@ -64,7 +64,7 @@ body{
     grid-column-end: 3;
     background-color: white;
     box-shadow:  0px 2px rgba(33, 33, 34, 0.2);
-    padding: 17px;
+    padding: 15px 10px 10px 20px;
     gap: 20px;
 }
 .header-top{
@@ -90,7 +90,7 @@ body{
     padding-left: 20px;
     border: 0px;
     border-color: azure;
-    color: #fff;
+    color: black;
     background-color: rgb(214, 203, 203);
 }
 .header-top-left svg{
@@ -103,13 +103,21 @@ body{
     gap:28px;
     padding-right: 30px;
     align-items: center;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     justify-content: end;
 }
 .header-top-right svg{
     height: 30px;
     width: 30px;
+}
+.icon path {  
+    fill: #fff;
+}
+.header-top-right svg:hover{
+    height: 34px;
+    width: 34px;
+    opacity: 90%;
 }
 .header-top-right  img{
     border-radius: 50%;
@@ -119,6 +127,7 @@ body{
 .header-buttom{
     height: 10vh;
     display: flex;
+    margin-top: 10px;
     margin-bottom: 0px;
     justify-content: space-between;
 }
@@ -126,6 +135,7 @@ body{
     display: flex;
     gap: 25px;
     align-items: center;
+    padding-bottom: 10px;
     padding-left: 20px;
 }
 .header-buttom-left img{
@@ -139,7 +149,7 @@ body{
     padding-right: 50px;
 }
 .header-buttom-right div{
-    height: 30px;
+    height: 37px;
     width: 100px;
     color: #fff;
     background-color: #2563eb;
@@ -149,4 +159,82 @@ body{
     justify-content: center;
     align-items: center;
     border-radius: 25px;
+}
+.header-buttom-right div:hover{
+    opacity: 70%;
+}
+
+/*content part*/
+.right-content{
+    margin: 15px;
+    /* background-color: aqua; */
+    display: flex;
+    gap: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.projects-container{
+    display: grid;
+    grid-template-columns: repeat(3, 220px);
+    grid-template-rows: repeat(2 , 230px);
+    gap: 10px;
+    padding: 5px;
+}
+.project{
+    background-color: orange;
+    border-radius: 10px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: end;
+}
+.inner-project{
+    background-color: #fff;
+    height: 230px;
+    width: 210px;
+    border-radius: 0px 10px 10px 0px;
+    
+}
+.content-right{
+    /* background-color: green; {for testing}*/
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 5px;
+}
+.announcement-container{
+    width: 250px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.announcement .ann-title{
+    font-weight: bolder;
+}
+.trending-content{
+    background-color: white;
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 250px;
+    gap: 15px;
+}
+.trending{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+
+}
+.trending .name {
+    display: flex;
+    flex-direction: column;
+}
+.trending img{
+    height: 50px;
+    width: 50px;
 }
