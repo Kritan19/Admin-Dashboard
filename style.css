@@ -7,12 +7,17 @@ body{
 }
 #left-side{
     height: 100vh;
-    width:23vw;
+    width:20vw;
     background-color: #2563eb;
-    padding: 20px;
+    padding: 25px;
     color: white;
     font-size: 25px;
     gap: 50px;
+}
+#left-side svg{
+    width: 30px;
+    height: 30px;
+    color: white;
 }
 .leftside-title{
     display: flex;
@@ -23,13 +28,13 @@ body{
     margin-bottom: 10px;
 }
 #left-side .leftside-title svg{
-    height: 50px;
+    height: 55px;
+    width: 55px;
 }
 .list-part{
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    
+    gap: 50px;  
 }
 #left-side ul{
     display: flex;
@@ -39,10 +44,10 @@ body{
 #left-side li{
     list-style-type: none;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 15px;
 }
 #left-side li:hover{
     text-decoration: underline;
     display: flex;
 }
-
