@@ -197,6 +197,11 @@ body{
     justify-content: space-around;
     padding-left: 15px;
 }
+.inner-project-top h3:hover{
+    text-decoration: underline;
+    font-weight: bolder;
+    font-size: 25px;
+}
 .inner-project-buttom{
     display: flex;
     gap: 5px;
@@ -206,6 +211,15 @@ body{
 .inner-project-buttom svg{
     height: 30px;
     width: 30px;
+}
+.inner-project-buttom .bookmark:hover{
+    fill: rgb(255, 166, 0);
+}
+.inner-project-buttom .delete:hover{
+    fill: rgb(255, 7, 7);
+}
+.inner-project-buttom .share:hover{
+    fill: blue;
 }
 .content-right{
     /* background-color: green; {for testing}*/
